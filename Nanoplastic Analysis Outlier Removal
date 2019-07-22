@@ -1,0 +1,35 @@
+## Nanoplastic Analysis Outlier Removal ##
+
+#Glyphosate
+  # Dose1: 716, 678, 591
+  # Dose2: 845, 631, 628, 616
+  # Dose3: 428
+  # Dose4: 1049
+  # Dose5: 774, 562, 491, 486, 477, 474, 473
+  # Dose6: 586, 576, 572, 567, 555, 555, 549, 536
+  # Dose7: 596, 551, 534
+  # Dose8: 1006, 987, 855, 695
+  
+#Rotenone
+  # Dose1: 1073, 1063, 1011, 877, 748
+  # Dose2: 881
+  # Dose3: 1003, 910, 821, 749
+  # Dose4: 1301, 586, 519
+  # Dose5: 637, 581
+  # Dose6: 806
+  # Dose7: None
+  # Dose8: 2259
+  
+#FCCP
+
+
+
+#TDCPP
+
+
+
+#Roundup
+
+
+
+#Paraquat
