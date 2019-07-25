@@ -571,7 +571,7 @@ Roundup <- read.csv(here("Roundup.csv"))
 # Control #
 
 Roundup1 <- subset(Roundup, Dose == "2")
-TDCPP2 <- subset(Roundup, Dose == "1")
+Roundup2 <- subset(Roundup, Dose == "1")
 
 Dose2_meanTD <- Roundup1 %>% 
   group_by(Minute = as.numeric(as.character(Minute))) %>% 
@@ -671,6 +671,39 @@ ggplot(data=Everything_TD, aes(x=Minute, y=mean_TD, group=as.factor(Dose), colou
                 position=position_dodge(0.05))+
   scale_color_brewer(palette  = "Dark2")
 ggsave(here("Everything_TD.png"))
+
+ggplot()+ 
+  geom_histogram(data=Roundup1, aes(x=TD), binwidth = 10, fill = "blue")+ 
+  theme_classic(base_size=18) 
+
+ggplot()+ 
+  geom_histogram(data=Roundup2, aes(x=TD), binwidth = 10, fill = "blue")+ 
+  theme_classic(base_size=18) 
+
+ggplot()+ 
+  geom_histogram(data=Roundup3, aes(x=TD), binwidth = 10, fill = "blue")+ 
+  theme_classic(base_size=18) 
+
+ggplot()+ 
+  geom_histogram(data=Roundup4, aes(x=TD), binwidth = 10, fill = "blue")+ 
+  theme_classic(base_size=18) 
+
+ggplot()+ 
+  geom_histogram(data=Roundup5, aes(x=TD), binwidth = 10, fill = "blue")+ 
+  theme_classic(base_size=18) 
+
+ggplot()+ 
+  geom_histogram(data=Roundup6, aes(x=TD), binwidth = 10, fill = "blue")+ 
+  theme_classic(base_size=18) 
+
+ggplot()+ 
+  geom_histogram(data=Roundup7, aes(x=TD), binwidth = 10, fill = "blue")+ 
+  theme_classic(base_size=18) 
+
+ggplot()+ 
+  geom_histogram(data=Roundup8, aes(x=TD), binwidth = 10, fill = "blue")+ 
+  theme_classic(base_size=18) 
+
 
 
 
