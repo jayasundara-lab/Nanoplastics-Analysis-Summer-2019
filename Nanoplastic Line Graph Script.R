@@ -15,7 +15,7 @@ glyphosate2 <- subset(glyphosate, Dose == "1")
 
 Dose2_meanTD <- glyphosate1 %>% 
   group_by(Minute = as.numeric(as.character(Minute))) %>% 
-  summarise(mean_TD = mean(TD), stdev_TD = sd(TD))i
+  summarise(mean_TD = mean(TD), stdev_TD = sd(TD))
 Dose1_meanTD <- glyphosate2 %>% 
   group_by(Minute = as.numeric(as.character(Minute))) %>% 
   summarise(mean_TD = mean(TD), stdev_TD = sd(TD))
